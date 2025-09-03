@@ -1,0 +1,47 @@
+import { TrendingUp, Users, Lightbulb } from "lucide-react";
+
+const Hero = () => {
+  return (
+    <section className="relative py-20 px-4 bg-gradient-to-br from-primary/5 to-secondary/5">
+      <div className="container mx-auto text-center">
+        <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+          Marketing Challenges in the
+          <span className="block text-primary">Retail Electricity Industry</span>
+        </h1>
+        
+        <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          Navigating the complex landscape of deregulated energy markets, customer acquisition, 
+          and building trust in an industry where consumers have choices.
+        </p>
+        
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 mt-12">
+          <div className="flex items-center gap-3 bg-card p-4 rounded-lg shadow-sm">
+            <TrendingUp className="h-8 w-8 text-primary" />
+            <div className="text-left">
+              <div className="font-semibold text-foreground">Market Volatility</div>
+              <div className="text-sm text-muted-foreground">Price fluctuations & competition</div>
+            </div>
+          </div>
+          
+          <div className="flex items-center gap-3 bg-card p-4 rounded-lg shadow-sm">
+            <Users className="h-8 w-8 text-secondary" />
+            <div className="text-left">
+              <div className="font-semibold text-foreground">Customer Trust</div>
+              <div className="text-sm text-muted-foreground">Building credibility & retention</div>
+            </div>
+          </div>
+          
+          <div className="flex items-center gap-3 bg-card p-4 rounded-lg shadow-sm">
+            <Lightbulb className="h-8 w-8 text-accent" />
+            <div className="text-left">
+              <div className="font-semibold text-foreground">Education</div>
+              <div className="text-sm text-muted-foreground">Consumer awareness & choice</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
