@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef2f2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fee2e2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="scaleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b91c1c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- Justice scales -->
+  <g transform="translate(200, 80)">
+    <!-- Scale base -->
+    <rect x="-2" y="80" width="4" height="60" fill="#374151"/>
+    <rect x="-15" y="135" width="30" height="8" rx="4" fill="#374151"/>
+    
+    <!-- Scale arm -->
+    <rect x="-50" y="38" width="100" height="4" rx="2" fill="#374151"/>
+    
+    <!-- Left scale pan -->
+    <line x1="-40" y1="40" x2="-50" y2="60" stroke="#374151" stroke-width="2"/>
+    <line x1="-30" y1="60" x2="-70" y2="60" stroke="#374151" stroke-width="2"/>
+    <path d="M -70,60 Q -70,65 -65,65 L -35,65 Q -30,65 -30,60" stroke="#374151" stroke-width="2" fill="none"/>
+    
+    <!-- Right scale pan -->
+    <line x1="40" y1="40" x2="50" y2="60" stroke="#374151" stroke-width="2"/>
+    <line x1="30" y1="60" x2="70" y2="60" stroke="#374151" stroke-width="2"/>
+    <path d="M 30,60 Q 30,65 35,65 L 65,65 Q 70,65 70,60" stroke="#374151" stroke-width="2" fill="none"/>
+    
+    <!-- Scale balance point -->
+    <circle cx="0" cy="40" r="3" fill="#374151"/>
+  </g>
+  
+  <!-- Regulatory framework boxes -->
+  
+  <!-- Federal level -->
+  <rect x="50" y="40" width="100" height="30" fill="#dc2626" opacity="0.8" rx="4"/>
+  <text x="100" y="52" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="bold">FEDERAL</text>
+  <text x="100" y="63" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">FTC • FERC</text>
+  
+  <!-- State level -->
+  <rect x="250" y="40" width="100" height="30" fill="#dc2626" opacity="0.6" rx="4"/>
+  <text x="300" y="52" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="bold">STATE</text>
+  <text x="300" y="63" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">PUC • AG</text>
+  
+  <!-- Local level -->
+  <rect x="150" y="10" width="100" height="30" fill="#dc2626" opacity="0.4" rx="4"/>
+  <text x="200" y="22" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="bold">LOCAL</text>
+  <text x="200" y="33" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">Municipal</text>
+  
+  <!-- Compliance requirements -->
+  
+  <!-- Disclosure Requirements -->
+  <rect x="30" y="180" width="80" height="40" fill="#3b82f6" opacity="0.8" rx="4"/>
+  <text x="70" y="195" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle" font-weight="bold">DISCLOSURE</text>
+  <text x="70" y="207" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">Terms • Rates</text>
+  <text x="70" y="216" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">Customer Rights</text>
+  
+  <!-- Marketing Standards -->
+  <rect x="130" y="180" width="80" height="40" fill="#10b981" opacity="0.8" rx="4"/>
+  <text x="170" y="195" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle" font-weight="bold">STANDARDS</text>
+  <text x="170" y="207" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">Truth in Advertising</text>
+  <text x="170" y="216" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">Fair Practices</text>
+  
+  <!-- Privacy & Data -->
+  <rect x="230" y="180" width="80" height="40" fill="#8b5cf6" opacity="0.8" rx="4"/>
+  <text x="270" y="195" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle" font-weight="bold">PRIVACY</text>
+  <text x="270" y="207" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">Data Protection</text>
+  <text x="270" y="216" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">CAN-SPAM</text>
+  
+  <!-- Consumer Protection -->
+  <rect x="290" y="180" width="80" height="40" fill="#f59e0b" opacity="0.8" rx="4"/>
+  <text x="330" y="195" font-family="Arial, sans-serif" font-size="9" fill="white" text-anchor="middle" font-weight="bold">PROTECTION</text>
+  <text x="330" y="207" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">Anti-Slamming</text>
+  <text x="330" y="216" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">Do Not Call</text>
+  
+  <!-- Warning signs -->
+  <g transform="translate(50, 120)">
+    <polygon points="10,0 20,17 0,17" fill="#ef4444"/>
+    <text x="10" y="12" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">!</text>
+    <text x="10" y="30" font-family="Arial, sans-serif" font-size="8" fill="#ef4444" text-anchor="middle">Penalties</text>
+  </g>
+  
+  <g transform="translate(330, 120)">
+    <polygon points="10,0 20,17 0,17" fill="#ef4444"/>
+    <text x="10" y="12" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="bold">!</text>
+    <text x="10" y="30" font-family="Arial, sans-serif" font-size="8" fill="#ef4444" text-anchor="middle">Fines</text>
+  </g>
+  
+  <!-- Compliance checklist -->
+  <g transform="translate(140, 240)">
+    <rect x="0" y="0" width="120" height="50" fill="white" rx="4" stroke="#d1d5db"/>
+    <text x="60" y="12" font-family="Arial, sans-serif" font-size="10" fill="#1f2937" text-anchor="middle" font-weight="bold">Compliance Checklist</text>
+    
+    <!-- Checkmarks -->
+    <circle cx="8" cy="22" r="3" fill="#10b981"/>
+    <path d="M 6,22 L 7,23 L 10,20" stroke="white" stroke-width="1" fill="none"/>
+    <text x="15" y="25" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">Legal Review</text>
+    
+    <circle cx="8" cy="32" r="3" fill="#10b981"/>
+    <path d="M 6,32 L 7,33 L 10,30" stroke="white" stroke-width="1" fill="none"/>
+    <text x="15" y="35" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">Staff Training</text>
+    
+    <circle cx="8" cy="42" r="3" fill="#10b981"/>
+    <path d="M 6,42 L 7,43 L 10,40" stroke="white" stroke-width="1" fill="none"/>
+    <text x="15" y="45" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">Documentation</text>
+    
+    <circle cx="70" cy="22" r="3" fill="#10b981"/>
+    <path d="M 68,22 L 69,23 L 72,20" stroke="white" stroke-width="1" fill="none"/>
+    <text x="77" y="25" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">Monitoring</text>
+    
+    <circle cx="70" cy="32" r="3" fill="#10b981"/>
+    <path d="M 68,32 L 69,33 L 72,30" stroke="white" stroke-width="1" fill="none"/>
+    <text x="77" y="35" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">Audit Trail</text>
+    
+    <circle cx="70" cy="42" r="3" fill="#10b981"/>
+    <path d="M 68,42 L 69,43 L 72,40" stroke="white" stroke-width="1" fill="none"/>
+    <text x="77" y="45" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">Updates</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1f2937" text-anchor="middle">Regulatory Compliance Framework</text>
+  
+  <!-- Balance indicator -->
+  <text x="200" y="165" font-family="Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle" font-style="italic">Balance: Marketing Goals ⚖️ Legal Requirements</text>
+</svg>

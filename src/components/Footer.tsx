@@ -7,12 +7,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Zap className="h-6 w-6 text-primary" />
-              <span className="text-xl font-bold text-foreground">PowerMarket Insights</span>
+              <img src="/images/logo.svg" alt="CenterPoint Energy Marketing" className="h-8 w-auto" />
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
-              Your go-to resource for marketing intelligence in the retail electricity industry. 
-              Helping marketing professionals navigate the complexities of deregulated energy markets.
+              Marketing intelligence for the energy utility industry. 
+              Helping marketing professionals navigate grid reliability, customer experience, and sustainable energy transitions.
             </p>
             <div className="flex items-center space-x-4">
               <Mail className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
@@ -24,10 +23,10 @@ const Footer = () => {
           <div>
             <h3 className="text-sm font-semibold text-foreground mb-4">Categories</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-primary transition-colors">Customer Acquisition</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Trust Building</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Market Strategy</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Compliance</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Grid Reliability</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Customer Experience</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Sustainability</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Innovation</a></li>
             </ul>
           </div>
           
@@ -43,7 +42,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; 2024 PowerMarket Insights. All rights reserved.</p>
+          <p>&copy; 2024 CenterPoint Energy Marketing. All rights reserved.</p>
         </div>
       </div>
     </footer>

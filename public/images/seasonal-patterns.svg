@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ecfdf5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d1fae5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="summerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="winterGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- Chart background -->
+  <rect x="50" y="40" width="300" height="200" fill="white" rx="8" stroke="#d1d5db" stroke-width="1"/>
+  
+  <!-- Grid lines -->
+  <line x1="50" y1="80" x2="350" y2="80" stroke="#f3f4f6" stroke-width="1"/>
+  <line x1="50" y1="120" x2="350" y2="120" stroke="#f3f4f6" stroke-width="1"/>
+  <line x1="50" y1="160" x2="350" y2="160" stroke="#f3f4f6" stroke-width="1"/>
+  <line x1="50" y1="200" x2="350" y2="200" stroke="#f3f4f6" stroke-width="1"/>
+  
+  <!-- Seasonal usage curve -->
+  <path d="M 75 180 Q 125 220 175 160 Q 200 120 225 100 Q 250 80 275 90 Q 300 120 325 170" 
+        stroke="#10b981" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Seasonal markers -->
+  
+  <!-- Winter -->
+  <circle cx="75" cy="180" r="6" fill="url(#winterGradient)"/>
+  <text x="75" y="200" font-family="Arial, sans-serif" font-size="10" fill="#1d4ed8" text-anchor="middle" font-weight="bold">WINTER</text>
+  <text x="75" y="212" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">Heating</text>
+  
+  <!-- Spring -->
+  <circle cx="150" cy="190" r="6" fill="#10b981"/>
+  <text x="150" y="210" font-family="Arial, sans-serif" font-size="10" fill="#10b981" text-anchor="middle" font-weight="bold">SPRING</text>
+  <text x="150" y="222" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">Moderate</text>
+  
+  <!-- Summer -->
+  <circle cx="250" cy="90" r="6" fill="url(#summerGradient)"/>
+  <text x="250" y="110" font-family="Arial, sans-serif" font-size="10" fill="#f59e0b" text-anchor="middle" font-weight="bold">SUMMER</text>
+  <text x="250" y="122" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">Peak AC</text>
+  
+  <!-- Fall -->
+  <circle cx="325" cy="170" r="6" fill="#ea580c"/>
+  <text x="325" y="190" font-family="Arial, sans-serif" font-size="10" fill="#ea580c" text-anchor="middle" font-weight="bold">FALL</text>
+  <text x="325" y="202" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">Transition</text>
+  
+  <!-- Y-axis labels -->
+  <text x="40" y="85" font-family="Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="end">High</text>
+  <text x="40" y="125" font-family="Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="end">Med</text>
+  <text x="40" y="165" font-family="Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="end">Low</text>
+  <text x="40" y="205" font-family="Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="end">Min</text>
+  
+  <!-- Title -->
+  <text x="200" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937" text-anchor="middle">Seasonal Energy Demand Patterns</text>
+  
+  <!-- Weather icons -->
+  
+  <!-- Snowflake for winter -->
+  <g transform="translate(60, 140)">
+    <path d="M 8,2 L 8,14 M 2,8 L 14,8 M 4,4 L 12,12 M 12,4 L 4,12" stroke="#3b82f6" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="8" cy="8" r="1" fill="#3b82f6"/>
+  </g>
+  
+  <!-- Sun for summer -->
+  <g transform="translate(235, 50)">
+    <circle cx="8" cy="8" r="4" fill="#fbbf24"/>
+    <path d="M 8,0 L 8,2 M 16,8 L 14,8 M 8,16 L 8,14 M 0,8 L 2,8 M 13.5,2.5 L 12.5,3.5 M 13.5,13.5 L 12.5,12.5 M 2.5,13.5 L 3.5,12.5 M 2.5,2.5 L 3.5,3.5" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Leaf for spring -->
+  <g transform="translate(135, 150)">
+    <path d="M 8,2 Q 14,8 8,14 Q 2,8 8,2" fill="#10b981"/>
+    <path d="M 8,2 Q 8,8 12,12" stroke="#059669" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Falling leaf for fall -->
+  <g transform="translate(310, 130)">
+    <path d="M 8,2 Q 14,6 10,12 Q 6,8 2,12 Q 6,6 8,2" fill="#ea580c"/>
+    <path d="M 8,2 Q 8,6 6,10" stroke="#c2410c" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Usage indicators -->
+  <rect x="70" y="255" width="80" height="12" rx="6" fill="#ef4444" opacity="0.3"/>
+  <text x="110" y="264" font-family="Arial, sans-serif" font-size="9" fill="#ef4444" text-anchor="middle" font-weight="bold">Peak Demand</text>
+  
+  <rect x="170" y="255" width="80" height="12" rx="6" fill="#fbbf24" opacity="0.3"/>
+  <text x="210" y="264" font-family="Arial, sans-serif" font-size="9" fill="#f59e0b" text-anchor="middle" font-weight="bold">High Usage</text>
+  
+  <rect x="270" y="255" width="80" height="12" rx="6" fill="#10b981" opacity="0.3"/>
+  <text x="310" y="264" font-family="Arial, sans-serif" font-size="9" fill="#10b981" text-anchor="middle" font-weight="bold">Opportunity</text>
+  
+  <!-- Marketing timing indicators -->
+  <text x="200" y="285" font-family="Arial, sans-serif" font-size="12" fill="#6b7280" text-anchor="middle" font-style="italic">Campaign Timing Strategy</text>
+</svg>

@@ -1,19 +1,32 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CalendarDays, Clock, Tag } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface BlogPostProps {
+  slug: string;
   title: string;
   excerpt: string;
   category: string;
   readTime: string;
   date: string;
   tags: string[];
+  image?: string;
 }
 
-const BlogPost = ({ title, excerpt, category, readTime, date, tags }: BlogPostProps) => {
+const BlogPost = ({ slug, title, excerpt, category, readTime, date, tags, image }: BlogPostProps) => {
   return (
-    <Card className="group hover:shadow-lg transition-all duration-300 border border-border hover:border-primary/20">
+    <Link to={`/article/${slug}`} className="block">
+      <Card className="group hover:shadow-lg transition-all duration-300 border border-border hover:border-primary/20 h-full">
+      {image && (
+        <div className="aspect-video overflow-hidden rounded-t-lg">
+          <img 
+            src={image} 
+            alt={title}
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+      )}
       <CardHeader className="pb-3">
         <div className="flex items-center justify-between mb-2">
           <Badge variant="secondary" className="text-xs">
@@ -37,7 +50,7 @@ const BlogPost = ({ title, excerpt, category, readTime, date, tags }: BlogPostPr
       </CardHeader>
       
       <CardContent>
-        <CardDescription className="text-sm text-muted-foreground mb-4 line-clamp-3">
+        <CardDescription className="text-sm text-foreground/80 mb-4 line-clamp-3">
           {excerpt}
         </CardDescription>
         
@@ -51,6 +64,7 @@ const BlogPost = ({ title, excerpt, category, readTime, date, tags }: BlogPostPr
         </div>
       </CardContent>
     </Card>
+    </Link>
   );
 };
 
