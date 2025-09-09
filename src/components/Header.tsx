@@ -6,7 +6,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center space-x-2">
-          <img src={import.meta.env.PROD ? "/retail-spark-blog/images/logo.svg" : "/images/logo.svg"} alt="CenterPoint Energy Marketing" className="h-8 w-auto" />
+          <img src={import.meta.env.PROD ? "/retail-spark-blog/images/logo.svg" : "/images/logo.svg"} alt="UtilitySpark Marketing" className="h-8 w-auto" />
         </div>
         
         <nav className="hidden md:flex items-center space-x-6">

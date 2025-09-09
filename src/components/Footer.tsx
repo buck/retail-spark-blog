@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <img src={import.meta.env.PROD ? "/retail-spark-blog/images/logo.svg" : "/images/logo.svg"} alt="CenterPoint Energy Marketing" className="h-8 w-auto" />
+              <img src={import.meta.env.PROD ? "/retail-spark-blog/images/logo.svg" : "/images/logo.svg"} alt="UtilitySpark Marketing" className="h-8 w-auto" />
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
               Marketing intelligence for the energy utility industry. 
@@ -42,7 +42,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; 2024 CenterPoint Energy Marketing. All rights reserved.</p>
+          <p>&copy; 2024 UtilitySpark. All rights reserved.</p>
         </div>
       </div>
     </footer>
