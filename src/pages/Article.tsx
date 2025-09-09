@@ -100,7 +100,7 @@ const Article = () => {
 
     const fetchArticleContent = async () => {
       try {
-        const response = await fetch(article.filePath);
+        const response = await fetch(import.meta.env.PROD ? `/retail-spark-blog${article.filePath}` : article.filePath);
         const text = await response.text();
         setContent(parseMarkdown(text));
       } catch (error) {

@@ -5,7 +5,7 @@ const Hero = () => {
     <section className="relative py-20 px-4 bg-gradient-to-br from-primary/5 to-secondary/5 overflow-hidden">
       <div className="absolute inset-0 opacity-30">
         <img 
-          src="/images/hero-bg.svg" 
+          src={import.meta.env.PROD ? "/retail-spark-blog/images/hero-bg.svg" : "/images/hero-bg.svg"} 
           alt="Utility industry marketing background" 
           className="w-full h-full object-cover"
         />
