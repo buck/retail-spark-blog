@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:0.1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.1" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e5e7eb" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#heroGradient)"/>
+  <rect width="1200" height="400" fill="url(#grid)"/>
+  
+  <!-- Electric transmission towers -->
+  <g transform="translate(100, 150)">
+    <!-- Tower structure -->
+    <polygon points="20,0 25,200 15,200" fill="#6b7280" opacity="0.4"/>
+    <!-- Cross beams -->
+    <rect x="5" y="50" width="30" height="3" fill="#6b7280" opacity="0.4"/>
+    <rect x="5" y="100" width="30" height="3" fill="#6b7280" opacity="0.4"/>
+    <rect x="5" y="150" width="30" height="3" fill="#6b7280" opacity="0.4"/>
+    <!-- Power lines -->
+    <path d="M 35,60 Q 120,80 200,60" stroke="#374151" stroke-width="2" fill="none" opacity="0.3"/>
+    <path d="M 35,110 Q 120,130 200,110" stroke="#374151" stroke-width="2" fill="none" opacity="0.3"/>
+    <path d="M 35,160 Q 120,180 200,160" stroke="#374151" stroke-width="2" fill="none" opacity="0.3"/>
+  </g>
+  
+  <!-- Second tower -->
+  <g transform="translate(200, 140)">
+    <polygon points="20,0 25,210 15,210" fill="#6b7280" opacity="0.3"/>
+    <rect x="5" y="60" width="30" height="3" fill="#6b7280" opacity="0.3"/>
+    <rect x="5" y="110" width="30" height="3" fill="#6b7280" opacity="0.3"/>
+    <rect x="5" y="160" width="30" height="3" fill="#6b7280" opacity="0.3"/>
+    <path d="M 35,70 Q 120,90 200,70" stroke="#374151" stroke-width="2" fill="none" opacity="0.2"/>
+    <path d="M 35,120 Q 120,140 200,120" stroke="#374151" stroke-width="2" fill="none" opacity="0.2"/>
+    <path d="M 35,170 Q 120,190 200,170" stroke="#374151" stroke-width="2" fill="none" opacity="0.2"/>
+  </g>
+  
+  <!-- Third tower (distant) -->
+  <g transform="translate(400, 160)">
+    <polygon points="15,0 20,190 10,190" fill="#6b7280" opacity="0.2"/>
+    <rect x="3" y="50" width="24" height="2" fill="#6b7280" opacity="0.2"/>
+    <rect x="3" y="100" width="24" height="2" fill="#6b7280" opacity="0.2"/>
+    <rect x="3" y="150" width="24" height="2" fill="#6b7280" opacity="0.2"/>
+  </g>
+  
+  <!-- Marketing data visualization elements -->
+  
+  <!-- Chart bars representing market analysis -->
+  <g transform="translate(700, 200)">
+    <rect x="0" y="80" width="20" height="100" fill="#3b82f6" opacity="0.6" rx="2"/>
+    <rect x="30" y="60" width="20" height="120" fill="#3b82f6" opacity="0.7" rx="2"/>
+    <rect x="60" y="40" width="20" height="140" fill="#3b82f6" opacity="0.8" rx="2"/>
+    <rect x="90" y="70" width="20" height="110" fill="#3b82f6" opacity="0.7" rx="2"/>
+    <rect x="120" y="30" width="20" height="150" fill="#3b82f6" opacity="0.8" rx="2"/>
+    
+    <!-- Chart labels -->
+    <text x="10" y="200" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">Q1</text>
+    <text x="40" y="200" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">Q2</text>
+    <text x="70" y="200" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">Q3</text>
+    <text x="100" y="200" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">Q4</text>
+    <text x="130" y="200" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">YoY</text>
+    
+    <text x="70" y="220" font-family="Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle" font-style="italic">Market Growth</text>
+  </g>
+  
+  <!-- Customer icons -->
+  <g transform="translate(900, 250)">
+    <circle cx="0" cy="0" r="8" fill="#10b981" opacity="0.6"/>
+    <rect x="-6" y="5" width="12" height="15" fill="#10b981" opacity="0.6" rx="2"/>
+    <text x="0" y="35" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">Customers</text>
+  </g>
+  
+  <g transform="translate(950, 260)">
+    <circle cx="0" cy="0" r="8" fill="#f59e0b" opacity="0.6"/>
+    <rect x="-6" y="5" width="12" height="15" fill="#f59e0b" opacity="0.6" rx="2"/>
+  </g>
+  
+  <g transform="translate(1000, 255)">
+    <circle cx="0" cy="0" r="8" fill="#3b82f6" opacity="0.6"/>
+    <rect x="-6" y="5" width="12" height="15" fill="#3b82f6" opacity="0.6" rx="2"/>
+  </g>
+  
+  <!-- Trend arrows -->
+  <g transform="translate(600, 100)">
+    <path d="M 0,30 Q 20,20 40,10 Q 60,0 80,5" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M 75,0 L 80,5 L 75,10" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <text x="40" y="50" font-family="Arial, sans-serif" font-size="10" fill="#10b981" text-anchor="middle" font-weight="bold">Growth Trend</text>
+  </g>
+  
+  <!-- Marketing channels icons -->
+  <g transform="translate(50, 50)">
+    <!-- Digital marketing -->
+    <rect x="0" y="0" width="30" height="20" rx="4" fill="#3b82f6" opacity="0.4"/>
+    <circle cx="15" cy="10" r="3" fill="white" opacity="0.8"/>
+    <text x="15" y="35" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">Digital</text>
+  </g>
+  
+  <g transform="translate(100, 60)">
+    <!-- Email marketing -->
+    <rect x="0" y="0" width="25" height="18" rx="3" fill="#f59e0b" opacity="0.4"/>
+    <path d="M 2,3 L 12.5,10 L 23,3" stroke="white" stroke-width="1.5" fill="none"/>
+    <text x="12.5" y="33" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">Email</text>
+  </g>
+  
+  <g transform="translate(150, 45)">
+    <!-- Social media -->
+    <circle cx="15" cy="15" r="12" fill="#8b5cf6" opacity="0.4"/>
+    <text x="15" y="19" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="bold">#</text>
+    <text x="15" y="40" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">Social</text>
+  </g>
+  
+  <!-- Trust and compliance indicators -->
+  <g transform="translate(1050, 80)">
+    <!-- Shield for trust -->
+    <path d="M 15,0 L 5,5 L 5,20 Q 5,25 15,30 Q 25,25 25,20 L 25,5 Z" fill="#10b981" opacity="0.5"/>
+    <path d="M 10,15 L 13,18 L 20,11" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="15" y="45" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">Trust</text>
+  </g>
+  
+  <!-- Regulatory compliance -->
+  <g transform="translate(1100, 120)">
+    <rect x="0" y="0" width="25" height="18" rx="2" fill="#dc2626" opacity="0.4"/>
+    <text x="12.5" y="11" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="bold">⚖</text>
+    <text x="12.5" y="33" font-family="Arial, sans-serif" font-size="8" fill="#6b7280" text-anchor="middle">Compliance</text>
+  </g>
+  
+  <!-- Floating particles/energy elements -->
+  <circle cx="300" cy="80" r="2" fill="#3b82f6" opacity="0.3"/>
+  <circle cx="450" cy="120" r="1.5" fill="#10b981" opacity="0.4"/>
+  <circle cx="600" cy="60" r="2.5" fill="#f59e0b" opacity="0.3"/>
+  <circle cx="750" cy="90" r="1" fill="#8b5cf6" opacity="0.4"/>
+  <circle cx="850" cy="110" r="2" fill="#ef4444" opacity="0.3"/>
+  <circle cx="950" cy="70" r="1.5" fill="#06b6d4" opacity="0.4"/>
+  
+  <!-- Additional floating elements -->
+  <circle cx="200" cy="300" r="3" fill="#3b82f6" opacity="0.2"/>
+  <circle cx="350" cy="320" r="2" fill="#10b981" opacity="0.3"/>
+  <circle cx="500" cy="310" r="2.5" fill="#f59e0b" opacity="0.2"/>
+  <circle cx="650" cy="330" r="1.5" fill="#8b5cf6" opacity="0.3"/>
+  <circle cx="800" cy="315" r="2" fill="#ef4444" opacity="0.2"/>
+  
+  <!-- Subtle energy waves -->
+  <path d="M 0,350 Q 200,340 400,350 Q 600,360 800,350 Q 1000,340 1200,350" 
+        stroke="#3b82f6" stroke-width="1" fill="none" opacity="0.2"/>
+  <path d="M 0,370 Q 200,360 400,370 Q 600,380 800,370 Q 1000,360 1200,370" 
+        stroke="#10b981" stroke-width="1" fill="none" opacity="0.2"/>
+</svg>

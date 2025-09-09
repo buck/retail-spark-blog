@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0fdf4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dcfce7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="solarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- Central earth/globe -->
+  <circle cx="200" cy="150" r="50" fill="#22c55e" opacity="0.3"/>
+  <circle cx="200" cy="150" r="35" fill="#16a34a" opacity="0.5"/>
+  
+  <!-- Continents on globe -->
+  <path d="M 185 130 Q 190 125 200 130 Q 210 125 215 135 Q 205 140 195 135 Q 185 140 185 130" fill="#15803d"/>
+  <path d="M 180 155 Q 190 150 205 155 Q 220 160 210 170 Q 195 165 185 170 Q 175 165 180 155" fill="#15803d"/>
+  
+  <!-- Renewable energy sources around the globe -->
+  
+  <!-- Solar panels -->
+  <g transform="translate(120, 100)">
+    <rect x="0" y="0" width="30" height="20" fill="url(#solarGradient)" rx="2"/>
+    <line x1="0" y1="5" x2="30" y2="5" stroke="#f59e0b" stroke-width="0.5" opacity="0.7"/>
+    <line x1="0" y1="10" x2="30" y2="10" stroke="#f59e0b" stroke-width="0.5" opacity="0.7"/>
+    <line x1="0" y1="15" x2="30" y2="15" stroke="#f59e0b" stroke-width="0.5" opacity="0.7"/>
+    <line x1="10" y1="0" x2="10" y2="20" stroke="#f59e0b" stroke-width="0.5" opacity="0.7"/>
+    <line x1="20" y1="0" x2="20" y2="20" stroke="#f59e0b" stroke-width="0.5" opacity="0.7"/>
+    <text x="15" y="35" font-family="Arial, sans-serif" font-size="9" fill="#f59e0b" text-anchor="middle" font-weight="bold">SOLAR</text>
+  </g>
+  
+  <!-- Wind turbines -->
+  <g transform="translate(250, 90)">
+    <rect x="14" y="0" width="2" height="40" fill="#6b7280"/>
+    <!-- Turbine blades -->
+    <path d="M 15,8 Q 10,5 8,10 Q 12,12 15,8" fill="white" stroke="#6b7280" stroke-width="1"/>
+    <path d="M 15,8 Q 20,5 22,10 Q 18,12 15,8" fill="white" stroke="#6b7280" stroke-width="1"/>
+    <path d="M 15,8 Q 15,3 15,8 Q 15,13 15,8" fill="white" stroke="#6b7280" stroke-width="1"/>
+    <circle cx="15" cy="8" r="1" fill="#6b7280"/>
+    <text x="15" y="55" font-family="Arial, sans-serif" font-size="9" fill="#6b7280" text-anchor="middle" font-weight="bold">WIND</text>
+  </g>
+  
+  <!-- Hydro power -->
+  <g transform="translate(120, 200)">
+    <path d="M 0,10 Q 10,0 20,10 Q 30,0 40,10 L 40,20 L 0,20 Z" fill="#3b82f6"/>
+    <rect x="12" y="10" width="16" height="8" fill="#1d4ed8"/>
+    <circle cx="20" cy="14" r="3" fill="white" opacity="0.8"/>
+    <text x="20" y="35" font-family="Arial, sans-serif" font-size="9" fill="#3b82f6" text-anchor="middle" font-weight="bold">HYDRO</text>
+  </g>
+  
+  <!-- Geothermal -->
+  <g transform="translate(250, 200)">
+    <rect x="10" y="15" width="20" height="15" fill="#ef4444" rx="2"/>
+    <path d="M 5,15 Q 15,5 25,15 Q 35,5 45,15" stroke="#ef4444" stroke-width="2" fill="none"/>
+    <path d="M 8,20 Q 15,12 22,20 Q 32,12 38,20" stroke="#ef4444" stroke-width="1" fill="none" opacity="0.7"/>
+    <text x="25" y="40" font-family="Arial, sans-serif" font-size="9" fill="#ef4444" text-anchor="middle" font-weight="bold">GEOTHERMAL</text>
+  </g>
+  
+  <!-- Energy flow lines -->
+  <path d="M 150,110 Q 175,125 200,120" stroke="#10b981" stroke-width="2" fill="none" stroke-dasharray="3,2" opacity="0.7"/>
+  <path d="M 250,110 Q 225,125 200,120" stroke="#10b981" stroke-width="2" fill="none" stroke-dasharray="3,2" opacity="0.7"/>
+  <path d="M 150,200 Q 175,185 200,180" stroke="#10b981" stroke-width="2" fill="none" stroke-dasharray="3,2" opacity="0.7"/>
+  <path d="M 250,200 Q 225,185 200,180" stroke="#10b981" stroke-width="2" fill="none" stroke-dasharray="3,2" opacity="0.7"/>
+  
+  <!-- Authenticity vs Greenwashing -->
+  
+  <!-- Authentic side -->
+  <rect x="50" y="50" width="80" height="60" fill="white" rx="6" stroke="#10b981" stroke-width="2"/>
+  <text x="90" y="65" font-family="Arial, sans-serif" font-size="11" fill="#10b981" text-anchor="middle" font-weight="bold">AUTHENTIC</text>
+  <text x="90" y="77" font-family="Arial, sans-serif" font-size="8" fill="#059669" text-anchor="middle">✓ Verified Sources</text>
+  <text x="90" y="87" font-family="Arial, sans-serif" font-size="8" fill="#059669" text-anchor="middle">✓ Third-party Certified</text>
+  <text x="90" y="97" font-family="Arial, sans-serif" font-size="8" fill="#059669" text-anchor="middle">✓ Transparent Impact</text>
+  
+  <!-- Greenwashing warning -->
+  <rect x="270" y="50" width="80" height="60" fill="white" rx="6" stroke="#ef4444" stroke-width="2"/>
+  <text x="310" y="65" font-family="Arial, sans-serif" font-size="11" fill="#ef4444" text-anchor="middle" font-weight="bold">GREENWASHING</text>
+  <text x="310" y="77" font-family="Arial, sans-serif" font-size="8" fill="#dc2626" text-anchor="middle">✗ Misleading Claims</text>
+  <text x="310" y="87" font-family="Arial, sans-serif" font-size="8" fill="#dc2626" text-anchor="middle">✗ No Verification</text>
+  <text x="310" y="97" font-family="Arial, sans-serif" font-size="8" fill="#dc2626" text-anchor="middle">✗ False Impact</text>
+  
+  <!-- Green certification badges -->
+  <g transform="translate(160, 250)">
+    <circle cx="0" cy="0" r="12" fill="#10b981"/>
+    <text x="0" y="4" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="bold">GREEN-E</text>
+    <text x="0" y="18" font-family="Arial, sans-serif" font-size="7" fill="#10b981" text-anchor="middle">Certified</text>
+  </g>
+  
+  <g transform="translate(200, 250)">
+    <circle cx="0" cy="0" r="12" fill="#059669"/>
+    <text x="0" y="-2" font-family="Arial, sans-serif" font-size="7" fill="white" text-anchor="middle" font-weight="bold">EPA</text>
+    <text x="0" y="6" font-family="Arial, sans-serif" font-size="7" fill="white" text-anchor="middle" font-weight="bold">GREEN</text>
+    <text x="0" y="18" font-family="Arial, sans-serif" font-size="7" fill="#059669" text-anchor="middle">Partner</text>
+  </g>
+  
+  <g transform="translate(240, 250)">
+    <circle cx="0" cy="0" r="12" fill="#16a34a"/>
+    <path d="M -6,-2 Q 0,-8 6,-2 Q 0,4 -6,-2" fill="white"/>
+    <text x="0" y="18" font-family="Arial, sans-serif" font-size="7" fill="#16a34a" text-anchor="middle">REC</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937" text-anchor="middle">Green Energy Marketing</text>
+  
+  <!-- Subtitle -->
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="12" fill="#6b7280" text-anchor="middle" font-style="italic">Authenticity vs. Greenwashing</text>
+  
+  <!-- Carbon footprint reduction indicator -->
+  <g transform="translate(320, 140)">
+    <circle cx="0" cy="0" r="15" fill="#10b981" opacity="0.2"/>
+    <text x="0" y="-5" font-family="Arial, sans-serif" font-size="10" fill="#10b981" text-anchor="middle" font-weight="bold">CO₂</text>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="12" fill="#10b981" text-anchor="middle">↓</text>
+    <text x="0" y="25" font-family="Arial, sans-serif" font-size="8" fill="#10b981" text-anchor="middle">Reduced</text>
+  </g>
+  
+  <!-- Customer trust meter -->
+  <g transform="translate(80, 140)">
+    <circle cx="0" cy="0" r="15" fill="#22c55e" opacity="0.2"/>
+    <text x="0" y="4" font-family="Arial, sans-serif" font-size="16" fill="#22c55e" text-anchor="middle">💚</text>
+    <text x="0" y="25" font-family="Arial, sans-serif" font-size="8" fill="#22c55e" text-anchor="middle">Trust</text>
+  </g>
+</svg>
